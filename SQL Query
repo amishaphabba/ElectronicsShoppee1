@@ -1,0 +1,11 @@
+Query
+
+select * from customer;
+select * from customer_address;
+select * from basket;
+select * from electronic_product;
+select * from electronic_product_order;
+select * from electronic_product_detail;
+select * from electronic_product_type;
+select * from manager;
+select * from account;
