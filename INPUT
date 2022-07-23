@@ -1,0 +1,75 @@
+ElectronicProduct
+{
+                "name":"Hp laptop",
+                "price":"50000",
+                "electronicProductType":{
+                    
+                }
+}
+------------------------------------------------------------
+Customer
+
+{
+         "customer_id":id,
+        "customerName":"qwerty",
+        "customerEmail":"qwert@gmail.com",
+        "customerPhone":"9487825677",
+        "customerAddress":{
+            "addressLineOne":"qwerty nivas",
+            "addressLineTwo":"gandhi colony",
+            "city":"dholakpur",
+            "state":"dholakpur",
+            "country":"POGO",
+            "postalCode":"89808",
+            "shipping":true,
+            "billing":true
+        },
+        "electronicProductOrderSet":[
+            {
+                "orderNum":order_num,
+                "orderDate":"2022-07-22"
+            }
+        ],
+        "electronicProduct":[
+            {
+                "name":"product_name",
+                "price":"55000",
+                "electronicProductType":{
+                    
+                }
+            },
+            {
+                "name":"iPhone",
+                "price":"45000",
+                "electronicProductType":{
+                    
+                }
+            }
+        ],
+        "basket":{
+            
+        }
+}          
+
+-------------------------------------------------------------
+Account
+{
+    "userName":"QWERTY",
+    "password":"QWERTY@10",
+    "userRole":"manager"
+}
+
+--------------------------------------------------------------------
+Manager
+{ 
+    "manager_id":1,
+    "account":{
+        "account_id":acc_id(ex- 6)   //add account id to be linked with manager role
+    },
+    "customer":{
+        "customer_id":cust_id
+    },
+    "product":{
+        "product_id":prd_id
+    }
+}
